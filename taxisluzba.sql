@@ -22,11 +22,16 @@
 --ime varchar(50),
 --prezime varchar(50),
 --kontakt varchar(100)
-----);
+--);
 
 --create table voznje(
 --sifra int,
 --datum datetime,
 --cijena decimal(10,2),
 --udaljenost decimal(18,3)
+--);
+
+--create table clanovi(
+--putnik int,
+--voznja int
 --);
