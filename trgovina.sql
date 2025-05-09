@@ -16,5 +16,5 @@
 --create table stavke(
 --racun int,
 --proizvod int,
---kolicina decimal(18,3)
+--kolicina decimal(5,3)
 --);
