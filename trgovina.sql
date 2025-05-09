@@ -13,3 +13,8 @@
 --cijena decimal(18,2)
 --);
 
+--create table stavke(
+--racun int,
+--proizvod int,
+--kolicina int
+--);
