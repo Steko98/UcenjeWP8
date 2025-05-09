@@ -9,3 +9,10 @@
 --aktivan bit
 --);
 
+--create table vozaci(
+--sifra int,
+--ime varchar(50),
+--prezime varchar(50),
+--oib varchar(20),
+--email varchar(100)
+--);
