@@ -11,7 +11,7 @@ sifra int not null primary key identity(1,1), -- oznaceno kao primary key (id), 
 naziv varchar(50) not null, -- not null znaci da je obvezno
 cijena decimal(18,2) null, -- null se ne mora pisati
 datumpokretanja datetime, -- isto null, nije napisano
-aktivan bit not null default 0 -- default 0 znaci false ako se ne naznaci drugacije
+aktivan bit not null default 0 -- default 0 znaci false ako se ne naznaci drugacije (1 true, 0 false)
 );
 
 create table grupe(
