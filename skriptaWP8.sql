@@ -1,4 +1,4 @@
-﻿use master;
+use master;
 go
 drop database if exists edunovawp8;
 go
