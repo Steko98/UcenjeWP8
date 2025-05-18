@@ -26,14 +26,14 @@ create table rokovi(
 sifra int not null primary key identity(1,1),
 datum datetime not null,
 ucionica int,
-polozeno bit,
-ocjena decimal(3,2),
 kolegij int not null references kolegiji(sifra)
 );
 
 create table prijave(
 student int not null references studenti(sifra),
-rok int not null references rokovi(sifra)
+rok int not null references rokovi(sifra),
+ocjena int,
+polozeno bit
 );
 
 insert into studenti (ime,prezime,smjer,godina) values
@@ -41,57 +41,33 @@ insert into studenti (ime,prezime,smjer,godina) values
 ('Ivan','Kovačević','Povijest','3. preddiplomski'),
 ('Marija','Babić','Povijest','3. preddiplomski'),
 ('Josip','Marić','Povijest','3. preddiplomski'),
-('Marko','Jurić','Povijest','3. preddiplomski'),
-('Ivana','Novak','Povijest','3. preddiplomski'),
-('Stjepan','Kovačić','Povijest','3. preddiplomski'),
-('Tomislav','Knežević','Povijest','3. preddiplomski'),
-('Željka','Vuković','Povijest','3. preddiplomski'),
-('Mario','Matić','Povijest','3. preddiplomski'),
-('Petra','Marković','Povijest','3. preddiplomski'),
-('Luka','Petrović','Povijest','3. preddiplomski'),
-('Matea','Tomić','Povijest','3. preddiplomski'),
-('Filip','Pavlović','Povijest','3. preddiplomski'),
-('Sara','Kovač','Povijest','3. preddiplomski'),
-('David','Božić','Povijest','3. preddiplomski'),
-('Helena','Grgić','Povijest','3. preddiplomski'),
-('Martin','Blažević','Povijest','3. preddiplomski'),
-('Ena','Perić','Povijest','3. preddiplomski'),
-('Ante','Pavić','Povijest','3. preddiplomski');
+('Marko','Jurić','Povijest','3. preddiplomski');
 
 insert into kolegiji (naziv, ectsbodovi) values
 ('Hrvatske zemlje u razvijenom srednjem vijeku',3),
 ('Povijesna geografija i kartografija',2);
 
 insert into rokovi (datum, ucionica, kolegij) values
-('2025-06-09',32,1),
-('2025-07-04',84,2);
+('2024-06-09 09:00:00',32,1),
+('2024-07-04 09:30:00',84,1),
+('2024-06-28 17:45:00',45,2),
+('2024-07-05 16:00:00',73,2);
 
-insert into prijave (student,rok) values
-(1, 1),
-(2, 2),
-(3, 1),
-(4, 2),
-(5, 1),
-(6, 2),
-(7, 1),
-(8, 2),
-(9, 1),
-(10, 2),
-(11, 1),
-(12, 2),
-(13, 1),
-(14, 2),
-(15, 1),
-(16, 2),
-(17, 1),
-(18, 2),
-(19, 1),
-(20, 2);
+insert into prijave (student,rok,ocjena,polozeno) values
+(1, 1, 1, 0),
+(1, 1, 3, 1),
+(2, 1, 5, 1),
+(3, 1, 2, 1),
+(3, 2, 4, 1),
+(4, 3, 5, 1),
+(5, 3, 1, 0),
+(5, 4, 3, 1);
 
 select * from studenti;
 select * from kolegiji;
 select * from rokovi;
 select * from prijave;
 
-update rokovi set datum='2025-06-09 09:00:00' where sifra=1;
-update rokovi set datum='2025-07-04 17:30:00' where sifra=2;
+select * from prijave where rok=1;
+
+update prijave set rok=2 where student=1 AND ocjena=3;
