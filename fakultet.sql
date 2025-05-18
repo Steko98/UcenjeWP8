@@ -71,3 +71,9 @@ select * from prijave;
 select * from prijave where rok=1;
 
 update prijave set rok=2 where student=1 AND ocjena=3;
+
+delete prijave where polozeno=0;
+delete prijave where polozeno=1;
+
+delete rokovi where sifra=3;
+delete prijave where rok in (select sifra from rokovi where sifra=3);
