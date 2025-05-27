@@ -42,6 +42,7 @@ create table rekordi(
 sifra int not null primary key identity(1,1),
 naziv varchar(100),
 igrac int references igraci(sifra)
+-- turnir?
 );
 
 insert into turniri(ime, datumpocetka, datumzavrsetka) values
