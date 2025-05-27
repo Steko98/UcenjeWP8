@@ -22,8 +22,6 @@ turnir int not null references turniri(sifra)
 create table igraci(
 sifra int not null primary key identity(1,1),
 ime varchar(50) not null
---brojodigranih int, --mogu se izvesti iz clanova
---brojpobjeda int
 );
 
 create table clanovi(
@@ -42,7 +40,11 @@ create table rekordi(
 sifra int not null primary key identity(1,1),
 naziv varchar(100),
 igrac int references igraci(sifra)
--- turnir?
+);
+
+create table turnirRekord(
+turnir int references turniri(sifra),
+rekord int references rekordi(sifra)
 );
 
 insert into turniri(ime, datumpocetka, datumzavrsetka) values
