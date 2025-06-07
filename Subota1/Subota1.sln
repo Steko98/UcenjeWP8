@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36105.17 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Subota1", "Subota1\Subota1.csproj", "{064DEF45-359F-4DB4-8898-83AC4CCD249C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Subota1backend", "Subota1backend\Subota1backend.csproj", "{1C8FE9B5-220A-485D-8AF0-F6EB0D4A5007}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{064DEF45-359F-4DB4-8898-83AC4CCD249C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{064DEF45-359F-4DB4-8898-83AC4CCD249C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{064DEF45-359F-4DB4-8898-83AC4CCD249C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{064DEF45-359F-4DB4-8898-83AC4CCD249C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C8FE9B5-220A-485D-8AF0-F6EB0D4A5007}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C8FE9B5-220A-485D-8AF0-F6EB0D4A5007}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C8FE9B5-220A-485D-8AF0-F6EB0D4A5007}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C8FE9B5-220A-485D-8AF0-F6EB0D4A5007}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2214D849-97C7-49A5-B4E3-099AC1D1221B}
+	EndGlobalSection
+EndGlobal

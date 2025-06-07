@@ -1,0 +1,6 @@
+@Subota1backend_HostAddress = http://localhost:5152
+
+GET {{Subota1backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
