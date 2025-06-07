@@ -12,9 +12,9 @@ namespace Subota1
         {
             Console.WriteLine("Kvadratura.com");
             Console.Write("Unesite duljinu prostorije u metrima: ");
-            int duljinaProstorije = int.Parse(Console.ReadLine());
+            double duljinaProstorije = double.Parse(Console.ReadLine());
             Console.Write("Unesite širinu prostorije u metrima: ");
-            int sirinaProstorije = int.Parse(Console.ReadLine());
+            double sirinaProstorije = double.Parse(Console.ReadLine());
             Console.WriteLine("Prostorija ima {0} kvadrata", duljinaProstorije*sirinaProstorije);
         }
     }
