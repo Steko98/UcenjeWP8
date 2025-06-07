@@ -14,10 +14,13 @@ namespace Subota1
 
             Console.Write("Unesite cijeli broj: ");
             int broj = int.Parse(Console.ReadLine());
-            if (broj % 2 == 0) {Console.WriteLine("Vaš broj je paran!");
-            } else
+            if (broj % 2 == 0)
             {
-                Console.WriteLine("Vaš broj je neparan!");
+                Console.WriteLine("Vaš broj({0}) je paran!", broj);
+            }
+            else
+            {
+                Console.WriteLine("Vaš broj({0}) je neparan!", broj);
             }
         }
     }
