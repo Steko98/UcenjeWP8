@@ -15,7 +15,8 @@ namespace Subota1
             double duljinaProstorije = double.Parse(Console.ReadLine());
             Console.Write("Unesite širinu prostorije u metrima: ");
             double sirinaProstorije = double.Parse(Console.ReadLine());
-            Console.WriteLine("Prostorija ima {0} kvadrata", duljinaProstorije*sirinaProstorije);
+            double kvadratura = duljinaProstorije * sirinaProstorije;
+            Console.WriteLine("Prostorija ima {0} kvadrata", kvadratura);
         }
     }
 }
