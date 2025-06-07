@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace Ucenje
 {
     class E01UlazIzlaz
@@ -13,7 +8,7 @@ namespace Ucenje
 
 
 
-            Console.Write("Pozdrav svijetu");
+            Console.Write("Pozdrav Osijeku");
             
             Console.WriteLine("Isti red");
 
