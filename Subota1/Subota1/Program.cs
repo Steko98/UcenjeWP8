@@ -2,4 +2,5 @@
 
 //V01OstatakApp.Izvedi();
 //V02TrošakPuta.Izvedi();
-V03IzracunajGodine.Izvedi();
+//V03IzracunajGodine.Izvedi();
+S02Kvadratura.Izvedi();
