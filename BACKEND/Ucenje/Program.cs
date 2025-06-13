@@ -11,7 +11,8 @@
 //E07ForPetlja.Izvedi();
 //E08WhilePetlja.Izvedi();
 //E09DoWhile.Izvedi();
-E10ForEach.Izvedi();
+//E10ForEach.Izvedi();
+E11TryCatch.Izvedi();
 
 
 
