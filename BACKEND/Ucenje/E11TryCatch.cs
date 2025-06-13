@@ -12,8 +12,6 @@ namespace Ucenje
         {
             Console.WriteLine("Try Catch");
 
-            Console.Write("Unesi broj: ");
-
 
             int broj = 0;
 
@@ -27,6 +25,14 @@ namespace Ucenje
             //}
 
             //Console.WriteLine(broj+1);
+
+
+
+
+
+
+
+
 
             //while (true)
             //{
@@ -45,37 +51,92 @@ namespace Ucenje
 
             //2 cijela broja ispisuje njihov zbroj
 
-            int prviBroj, drugiBroj;
+
+
+
+
+
+
+            //int prviBroj, drugiBroj;
+
+            //while (true)
+            //{
+            //    try
+            //    {
+            //        Console.Write("Unesi prvi broj: ");
+            //        prviBroj = int.Parse(Console.ReadLine());
+            //        break;
+            //    }
+            //    catch
+            //    {
+            //        Console.WriteLine("Niste unijeli prvi broj.");
+            //    }
+            //}
+
+            //while (true)
+            //{
+            //    try
+            //    {
+            //        Console.WriteLine("Unesi drugi broj: ");
+            //        drugiBroj = int.Parse(Console.ReadLine());
+            //        break;
+            //    }
+            //    catch
+            //    {
+            //        Console.WriteLine("Niste unijeli drugi broj.");
+            //    }
+            //}
+
+            //Console.WriteLine("Rezultat je {0}", prviBroj + drugiBroj);
+
+
+
+
+
+
+            string unosniNizZnakova;
+            int b = 0;
 
             while (true)
             {
+                Console.Write("Unesi broj: ");
+                unosniNizZnakova = Console.ReadLine().Trim();
+
+                if (unosniNizZnakova.Length > 9)
+                {
+                    Console.WriteLine("Unijeli ste predugacak niz znakova");
+                    continue;
+                }
                 try
                 {
-                    Console.Write("Unesi prvi broj: ");
-                    prviBroj = int.Parse(Console.ReadLine());
+                    b = int.Parse(unosniNizZnakova);
+                    if (broj > 10000)
+                    {
+                        Console.WriteLine("Unijeli ste prevelik broj.");
+                        continue;
+                    }
                     break;
                 }
                 catch
                 {
-                    Console.WriteLine("Niste unijeli prvi broj.");
+                    Console.WriteLine("Niste unijeli broj.");
                 }
             }
+            Console.WriteLine("Uneseni broj je: {0}", broj);
 
-            while (true)
-            {
-                try
-                {
-                    Console.WriteLine("Unesi drugi broj: ");
-                    drugiBroj = int.Parse(Console.ReadLine());
-                    break;
-                }
-                catch
-                {
-                    Console.WriteLine("Niste unijeli drugi broj.");
-                }
-            }
 
-            Console.WriteLine("Rezultat je {0}", prviBroj + drugiBroj);
+
+
+
+
+
+
+
+
+
+
+
+
         }
     }
 }
