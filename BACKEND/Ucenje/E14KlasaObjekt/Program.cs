@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Buffers;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -56,6 +58,48 @@ namespace Ucenje.E14KlasaObjekt
             {
                 Console.WriteLine(o.Ime);
             }
+
+            Console.WriteLine(osoba.Mjesto?.Naziv ?? "Nije postavljeno");
+
+            osoba.Mjesto = new()
+            {
+                Naziv = "Osijek",
+                Zupanija = new Zupanija()
+                {
+                    Naziv = "OBZ",
+                    Zupan = new()
+                    {
+                        Ime = "Natasa"
+                    }
+                }
+            };
+            Console.WriteLine(osoba.Mjesto?.Naziv??"Nije postavljeno");
+
+            osoba.Ime = "Pero";
+            //osoba.Mjesto.Zupanija = new Zupanija() { Naziv = "OBZ", Zupan = new() { Ime = "Natasa" } };
+
+            Console.WriteLine(osoba.Ime);
+
+            Console.WriteLine(osoba.Mjesto?.Zupanija.Naziv);
+
+            Console.WriteLine(osoba.Mjesto?.Naziv);
+
+
+            //napravit klasu automobil s 5 svojstava
+
+            
+
+
+        }
+
+        public static void AutomobilZadatak()
+        {
+            Automobil automobil = new Automobil();
+            automobil.sifra = 1;
+            automobil.Proizvodjac = "Ford";
+            automobil.DatumProizvodnje = new DateTime(1991,11,1);
+            automobil.Automatik = false;
+            automobil.Cijena = 14525.80;
         }
     }
 }
