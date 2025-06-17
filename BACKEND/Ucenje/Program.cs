@@ -14,7 +14,9 @@
 //E10ForEach.Izvedi();
 //E11TryCatch.Izvedi();
 //E11Z01.Izvedi();
-E12Metode.Izvedi();
+//E12Metode.Izvedi();
+//E13Rekurzija.Izvedi();
+E11Z02.Izvedi();
 
 
 
