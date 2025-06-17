@@ -1,5 +1,7 @@
 ﻿using Ucenje;
 
+new Ucenje.E14KlasaObjekt.Program();
+
 //E01UlazIzlaz.Izvedi();
 //E02Varijable.Izvedi();
 //E02Z1.Izvedi();
@@ -16,7 +18,7 @@
 //E11Z01.Izvedi();
 //E12Metode.Izvedi();
 //E13Rekurzija.Izvedi();
-E11Z02.Izvedi();
+//E11Z02.Izvedi();
 
 
 

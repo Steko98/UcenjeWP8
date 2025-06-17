@@ -53,7 +53,7 @@ namespace Ucenje
         /// </summary>
         /// <param name="poruka">Poruka koja se prikazuje korisniku prije unosa.</param>
         /// <returns>Uneseni cijeli broj.</returns>
-        public static int ucitajCijeliBroj(string poruka)
+        public static int UcitajCijeliBroj(string poruka)
         {
             while (true)
             {
