@@ -12,5 +12,6 @@ namespace Ucenje.E14KlasaObjekt.zavrsni
         public string? Ime { get; set; }
         public DateTime DatumPocetka { get; set; }
         public DateTime DatumZavrsetka { get; set; }
+        public Igra[] Igre { get; set; }
     }
 }
