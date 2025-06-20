@@ -1,6 +1,7 @@
 ﻿using Ucenje;
 
-new Ucenje.E14KlasaObjekt.Program();
+//new Ucenje.E14KlasaObjekt.Program();
+new Ucenje.E15Nasljedivanje.Program();
 
 //E01UlazIzlaz.Izvedi();
 //E02Varijable.Izvedi();
