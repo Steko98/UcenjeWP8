@@ -1,7 +1,8 @@
 ﻿using Ucenje;
 
 //new Ucenje.E14KlasaObjekt.Program();
-new Ucenje.E15Nasljedivanje.Program();
+//new Ucenje.E15Nasljedivanje.Program();
+new Ucenje.E16Polimorfizam.Program();
 
 //E01UlazIzlaz.Izvedi();
 //E02Varijable.Izvedi();
