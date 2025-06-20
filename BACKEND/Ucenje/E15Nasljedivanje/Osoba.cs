@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ucenje.E15Nasljedivanje
 {
-    public class Osoba : Object
+    public abstract class Osoba : Object
     {
         public int Sifra { get; set; }
         public string Ime { get; set; } = "";
@@ -15,7 +15,7 @@ namespace Ucenje.E15Nasljedivanje
 
         public override string ToString()
         {
-            return Ime + " " + Prezime;
+            return new StringBuilder().Append(Ime).Append(" ").Append(Prezime).ToString();
         }
     }
 

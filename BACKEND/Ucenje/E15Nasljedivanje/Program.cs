@@ -13,7 +13,7 @@ namespace Ucenje.E15Nasljedivanje
         {
             Console.WriteLine("Nasljedivanje");
 
-            var oso = new Osoba() { Ime = "Marija", Prezime = "Kaz" };
+            var oso = new PotencijalniPolaznik() { Ime = "Marija", Prezime = "Kaz" };
 
             Predavac pre = new() { Ime = "Karlo", Prezime = "Lot", IBAN = "HR28475928476493" };
 
@@ -27,7 +27,19 @@ namespace Ucenje.E15Nasljedivanje
             Console.WriteLine(pol.ToString());
 
             Console.WriteLine(pol);
-            Console.WriteLine(pre.ToString);
+            Console.WriteLine(pre);
+
+            string grad = "Osijek";
+            Console.WriteLine(grad.GetHashCode());
+
+            grad += " je najbolji";
+            Console.WriteLine(grad.GetHashCode());
+
+            var sb = new StringBuilder();
+            sb.Append("Osijek");
+            Console.WriteLine(sb.GetHashCode());
+            sb.Append(" je najbolji");
+            Console.WriteLine(sb.GetHashCode());
         }
     }
 }
