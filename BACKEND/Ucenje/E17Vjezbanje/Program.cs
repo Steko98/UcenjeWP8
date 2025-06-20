@@ -12,11 +12,15 @@ namespace Ucenje.E17Vjezbanje
         public Zadatak1 Zad1 { get; set; }
         public Zadatak2 Zad2 { get; set; }
         public Zadatak3 Zad3 { get; set; }
+        public Zadatak4 Zad4 { get; set; }
+        public Zadatak5 Zad5 { get; set; }
         public Program()
         {
             Zad1 = new Zadatak1();
             Zad2 = new Zadatak2();
             Zad3 = new Zadatak3();
+            Zad4 = new Zadatak4();
+            Zad5 = new Zadatak5();
             Izbornik();
         }
 
@@ -25,18 +29,15 @@ namespace Ucenje.E17Vjezbanje
             Console.WriteLine("\n******************************************");
             Console.WriteLine("*****************IZBORNIK*****************");
             Console.WriteLine("******************************************");
-            Console.WriteLine("0. Izlaz");
+            Console.WriteLine("\n0. Izlaz");
             Console.WriteLine("1. Zbrajanje dvaju brojeva");
             Console.WriteLine("2. Izracun povrsine pravokutnika");
             Console.WriteLine("3. Provjera je li broj pozitivan, negativan ili nula");
             Console.WriteLine("4. Zbroj elemenata niza");
+            Console.WriteLine("5. Prosjek ocjena");
 
 
             /*
-    4. Zbroj elemenata niza:
-        Napiši program koji deklarira niz cijelih brojeva, traži od korisnika da unese vrijednosti u niz, a zatim izračunava i ispisuje zbroj svih elemenata niza.
-    5. Prosjek ocjena:
-        Napiši program koji od korisnika traži da unese broj ocjena, a zatim i same ocjene. Program treba izračunati i ispisati prosjek ocjena.
     6. Ispis Fibonaccijevog niza:
         Napiši program koji od korisnika traži da unese broj n, a zatim ispisuje prvih n brojeva Fibonaccijevog niza (0, 1, 1, 2, 3, 5, 8...).
     7. Preokret stringa:
@@ -55,7 +56,7 @@ namespace Ucenje.E17Vjezbanje
 
 
 
-            Console.WriteLine("****************************************");
+            Console.WriteLine("\n****************************************");
             OcitajOdabir();
         }
 
@@ -77,7 +78,13 @@ namespace Ucenje.E17Vjezbanje
                 case 3:
                     Zad3.Izvedi();
                     break;
-                default:
+                case 4:
+                    Zad4.Izvedi();
+                    break;
+                case 5:
+                    Zad5.Izvedi();
+                    break;
+                    default:
                     Console.WriteLine("Ne postoji taj program");
                     break;
             }
