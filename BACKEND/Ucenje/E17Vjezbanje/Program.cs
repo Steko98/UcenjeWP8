@@ -14,6 +14,7 @@ namespace Ucenje.E17Vjezbanje
         public Zadatak3 Zad3 { get; set; }
         public Zadatak4 Zad4 { get; set; }
         public Zadatak5 Zad5 { get; set; }
+        public Zadatak6 Zad6 { get; set; }
         public Program()
         {
             Zad1 = new Zadatak1();
@@ -21,6 +22,7 @@ namespace Ucenje.E17Vjezbanje
             Zad3 = new Zadatak3();
             Zad4 = new Zadatak4();
             Zad5 = new Zadatak5();
+            Zad6 = new Zadatak6();
             Izbornik();
         }
 
@@ -35,6 +37,7 @@ namespace Ucenje.E17Vjezbanje
             Console.WriteLine("3. Provjera je li broj pozitivan, negativan ili nula");
             Console.WriteLine("4. Zbroj elemenata niza");
             Console.WriteLine("5. Prosjek ocjena");
+            Console.WriteLine("6. Ispis Fibonaccijevog niza");
 
 
             /*
@@ -84,7 +87,10 @@ namespace Ucenje.E17Vjezbanje
                 case 5:
                     Zad5.Izvedi();
                     break;
-                    default:
+                case 6:
+                    Zad6.Izvedi();
+                    break;
+                default:
                     Console.WriteLine("Ne postoji taj program");
                     break;
             }
