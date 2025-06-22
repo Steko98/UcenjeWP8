@@ -41,8 +41,6 @@ namespace Ucenje.E17Vjezbanje
 
 
             /*
-    6. Ispis Fibonaccijevog niza:
-        Napiši program koji od korisnika traži da unese broj n, a zatim ispisuje prvih n brojeva Fibonaccijevog niza (0, 1, 1, 2, 3, 5, 8...).
     7. Preokret stringa:
         Napiši program koji od korisnika traži da unese string, a zatim ispisuje taj string naopako (npr. "zdravo" postaje "ovardz").
     8. Brojanje samoglasnika:
