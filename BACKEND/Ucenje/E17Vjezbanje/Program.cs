@@ -15,6 +15,11 @@ namespace Ucenje.E17Vjezbanje
         public Zadatak4 Zad4 { get; set; }
         public Zadatak5 Zad5 { get; set; }
         public Zadatak6 Zad6 { get; set; }
+        public Zadatak7 Zad7 { get; set; }
+        public Zadatak8 Zad8 { get; set; }
+        public Zadatak9 Zad9 { get; set; }
+        public Zadatak10 Zad10 { get; set; }
+        public Zadatak11 Zad11 { get; set; }
         public Program()
         {
             Zad1 = new Zadatak1();
@@ -23,6 +28,11 @@ namespace Ucenje.E17Vjezbanje
             Zad4 = new Zadatak4();
             Zad5 = new Zadatak5();
             Zad6 = new Zadatak6();
+            Zad7 = new Zadatak7();
+            Zad8 = new Zadatak8();
+            Zad9 = new Zadatak9();
+            Zad10 = new Zadatak10();
+            Zad11 = new Zadatak11();
             Izbornik();
         }
 
@@ -38,17 +48,14 @@ namespace Ucenje.E17Vjezbanje
             Console.WriteLine("4. Zbroj elemenata niza");
             Console.WriteLine("5. Prosjek ocjena");
             Console.WriteLine("6. Ispis Fibonaccijevog niza");
+            Console.WriteLine("7. Preokret stringa");
+            Console.WriteLine("8. Brojanje samoglasnika");
+            Console.WriteLine("9. Pretvorba temperature");
+            Console.WriteLine("10. Sortiranje niza");
+            Console.WriteLine("11. Kalkulator");
 
 
             /*
-    7. Preokret stringa:
-        Napiši program koji od korisnika traži da unese string, a zatim ispisuje taj string naopako (npr. "zdravo" postaje "ovardz").
-    8. Brojanje samoglasnika:
-        Napiši program koji od korisnika traži da unese string, a zatim prebrojava i ispisuje koliko samoglasnika ima u tom stringu.
-    9. Pretvorba temperature:
-        Napiši program koji od korisnika traži da unese temperaturu u Celzijusima i pretvara je u Fahrenheit (°F = °C * 9/5 + 32) ili obrnuto, ovisno o odabiru korisnika.
-    10. Sortiranje niza:
-        Napiši program koji deklarira niz cijelih brojeva, traži od korisnika da unese vrijednosti u niz, a zatim sortira niz uzlazno i ispisuje sortirani niz.
     11. Kalkulator:
         Napiši program koji od korisnika traži da unese dva broja i operaciju (+, -, *, /), a zatim izračunava i ispisuje rezultat. Koristi switch statement za odabir operacije.
 
@@ -57,7 +64,7 @@ namespace Ucenje.E17Vjezbanje
 
 
 
-            Console.WriteLine("\n****************************************");
+            Console.WriteLine("\n******************************************");
             OcitajOdabir();
         }
 
@@ -71,7 +78,6 @@ namespace Ucenje.E17Vjezbanje
                     break;
                 case 1:
                     Zad1.Izvedi();
-                    //Console.WriteLine("1.Zadatak");
                     break;
                 case 2:
                     Zad2.Izvedi();
@@ -88,6 +94,21 @@ namespace Ucenje.E17Vjezbanje
                 case 6:
                     Zad6.Izvedi();
                     break;
+                case 7:
+                    Zad7.Izvedi();
+                    break;
+                case 8:
+                    Zad8.Izvedi();
+                    break;
+                case 9:
+                    Zad9.Izvedi();
+                    break;
+                case 10:
+                    Zad10.Izvedi();
+                    break;
+                case 11:
+                    Zad11.Izvedi();
+                    break;
                 default:
                     Console.WriteLine("Ne postoji taj program");
                     break;
@@ -97,23 +118,6 @@ namespace Ucenje.E17Vjezbanje
             {
                 Izbornik();
             }
-
-
-
-            //switch (Pomocno.UcitajCijeliBroj("Unesi redni broj programa"))
-            //{
-            //    case 0:
-            //        Console.WriteLine("Dovidenja!");
-            //        break;
-            //    case 1:
-            //        Console.WriteLine("1.Zadatak");
-            //        Izbornik();
-            //        break;
-            //    default:
-            //        Console.WriteLine("Ne postoji taj program");
-            //        Izbornik();
-            //        break;
-            //}
         }
     }
 }

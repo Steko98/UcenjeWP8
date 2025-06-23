@@ -32,6 +32,7 @@ namespace Ucenje.E17Vjezbanje
                 prviBroj = drugiBroj;
                 drugiBroj = stalakZaVrijednost;
             }
+            Console.WriteLine("Završio {0}. izvodenje", brojIzvodenja);
         }
 
     }

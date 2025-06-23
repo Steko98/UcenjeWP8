@@ -25,6 +25,7 @@ namespace Ucenje.E17Vjezbanje
             {
                 Console.WriteLine("Unijeli ste {0} (nula)", broj);
             }
+            Console.WriteLine("Završio {0}. izvodenje", brojIzvodenja);
         }
     }
 }

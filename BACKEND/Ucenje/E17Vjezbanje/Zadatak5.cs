@@ -39,7 +39,7 @@ namespace Ucenje.E17Vjezbanje
             double prosjek = suma / brojOcjena;
 
             Console.WriteLine("Prosjek ocjena je: {0}", Math.Round(prosjek, 2));
-
+            Console.WriteLine("Završio {0}. izvodenje", brojIzvodenja);
 
         }
     }

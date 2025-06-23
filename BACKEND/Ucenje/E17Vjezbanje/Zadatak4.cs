@@ -33,7 +33,7 @@ namespace Ucenje.E17Vjezbanje
             }
 
             Console.WriteLine("Zbroj svih elemenata niza je: {0}", suma);
-
+            Console.WriteLine("Završio {0}. izvodenje", brojIzvodenja);
 
         }
     }
