@@ -3,7 +3,8 @@
 //new Ucenje.E14KlasaObjekt.Program();
 //new Ucenje.E15Nasljedivanje.Program();
 //new Ucenje.E16Polimorfizam.Program();
-new Ucenje.E17Vjezbanje.Program();
+//new Ucenje.E17Vjezbanje.Program();
+new Ucenje.E18GSALE.Program();
 
 //E01UlazIzlaz.Izvedi();
 //E02Varijable.Izvedi();
