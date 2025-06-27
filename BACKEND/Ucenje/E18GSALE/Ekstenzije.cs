@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 
 namespace Ucenje.E18GSALE
 {
-    // Ekstenzije su metode koje možemo nakačiti na bilo koji tip podatka za koji je ekstenzija napisana
     public static class Ekstenzije
     {
 

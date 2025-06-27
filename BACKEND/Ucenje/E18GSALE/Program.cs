@@ -6,8 +6,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 
-namespace Ucenje.E18GSALE
-
 using System.Security.Cryptography;
 
 namespace Ucenje.E18GSALE

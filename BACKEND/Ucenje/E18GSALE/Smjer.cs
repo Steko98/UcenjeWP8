@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace Ucenje.E18GSALE
 {
-    public class Smjer : Entitet
     // sučelja mogu biti generička IComparable<Smjer>
     public class Smjer : Entitet, IComparable<Smjer>, IObrada
     {
