@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Ucenje.E14KlasaObjekt.zavrsni
 {
-    class Igrac : Entitet
+    class Entitet
     {
-        public string Ime { get; set; }
+        public int Sifra { get; set; }
     }
 }

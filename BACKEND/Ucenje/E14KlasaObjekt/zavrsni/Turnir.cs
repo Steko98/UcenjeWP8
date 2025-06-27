@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Ucenje.E14KlasaObjekt.zavrsni
 {
-    class Turnir
+    class Turnir : Entitet
     {
-        public int Sifra { get; set; }
         public string? Ime { get; set; }
         public DateTime DatumPocetka { get; set; }
         public DateTime DatumZavrsetka { get; set; }

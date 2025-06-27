@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Ucenje.E14KlasaObjekt.zavrsni
 {
-    class Rekord
+    class Rekord : Entitet
     {
-        public int Sifra { get; set; }
         public string? Naziv { get; set; }
         public Igrac? Igrac { get; set; } = new Igrac();
         public Turnir Turnir { get; set; } = new Turnir();
