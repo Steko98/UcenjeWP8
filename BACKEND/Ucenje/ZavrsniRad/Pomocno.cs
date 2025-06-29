@@ -4,32 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ucenje
+namespace Ucenje.ZavrsniRad
 {
-    internal class Pomocno
+    public class Pomocno
     {
-        /// <summary>
-        /// Učitava decimalni broj s konzole.
-        /// Prikazuje poruku korisniku i zahtijeva unos decimalnog broja.
-        /// Ako unos nije broj, ispisuje poruku o pogrešci i ponavlja unos.
-        /// </summary>
-        /// <param name="poruka">Poruka koja se prikazuje korisniku prije unosa.</param>
-        /// <returns>Uneseni broj.</returns>
-        public static decimal UcitajDecimalniBroj(string poruka)
-        {
-            while (true)
-            {
-                Console.Write(poruka + ": ");
-                try
-                {
-                    return decimal.Parse(Console.ReadLine());
-                }
-                catch
-                {
-                    Console.WriteLine("Pokušajte ponovo");
-                }
-            }
-        }
         //***********************************************************************************************************************
         /// <summary>
         /// Učitava i vraća string koji korisnik unese putem konzole.
@@ -73,7 +51,6 @@ namespace Ucenje
                 }
             }
         }
-        //***********************************************************************************************************************
         /// <summary>
         /// Učitava i vraća bool vrijednost na temelju korisničkog unosa.
         /// Korisniku se prikazuje poruka s opcijama '1 za DA' ili '2 za NE'.
@@ -116,5 +93,34 @@ namespace Ucenje
             }
         }
         //***********************************************************************************************************************
+        /// <summary>
+        /// Učitava cijeli broj unutar zadanog raspona koji korisnik unese putem konzole.
+        /// Ponovno traži unos dok korisnik ne unese ispravan cijeli broj unutar zadanih granica.
+        /// </summary>
+        /// <param name="poruka">Poruka koja se prikazuje korisniku prije unosa.</param>
+        /// <param name="min">Minimalna dozvoljena vrijednost (uključivo).</param>
+        /// <param name="max">Maksimalna dozvoljena vrijednost (uključivo).</param>
+        /// <returns>Uneseni cijeli broj unutar zadanog raspona.</returns>
+        internal static int UcitajRasponBroja(string poruka, int min, int max)
+        {
+            int b;
+            while (true)
+            {
+                try
+                {
+                    Console.Write(poruka + ": ");
+                    b = int.Parse(Console.ReadLine());
+                    if (b < min || b > max)
+                    {
+                        throw new Exception();
+                    }
+                    return b;
+                }
+                catch
+                {
+                    Console.WriteLine("Unos mora biti u rasponu {0} do {1}", min, max);
+                }
+            }
+        }
     }
 }

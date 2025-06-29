@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ucenje.E14KlasaObjekt.zavrsni
+namespace Ucenje.E14KlasaObjekt.Modeli
 {
-    class Entitet
+    public class Entitet
     {
         public int Sifra { get; set; }
     }

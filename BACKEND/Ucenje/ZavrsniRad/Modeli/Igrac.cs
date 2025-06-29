@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ucenje.E14KlasaObjekt.zavrsni
+namespace Ucenje.E14KlasaObjekt.Modeli
 {
-    class Igrac : Entitet
+    public class Igrac : Entitet
     {
         public string Ime { get; set; }
     }

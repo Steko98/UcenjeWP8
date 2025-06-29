@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ucenje.E14KlasaObjekt.zavrsni
+namespace Ucenje.E14KlasaObjekt.Modeli
 {
-    class Igra : Entitet
+    public class Rekord : Entitet
     {
-        public DateTime Datum { get; set; }
+        public string? Naziv { get; set; }
+        public Igrac? Igrac { get; set; } = new Igrac();
         public Turnir Turnir { get; set; } = new Turnir();
     }
 }

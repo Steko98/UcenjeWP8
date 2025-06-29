@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ucenje.E14KlasaObjekt.zavrsni
+namespace Ucenje.E14KlasaObjekt.Modeli
 {
-    class Clan
+    public class Clan
     {
         public Igra Igra { get; set; } = new Igra();
         public Igrac Igrac { get; set; } = new Igrac();
