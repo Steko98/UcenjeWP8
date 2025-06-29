@@ -5,7 +5,8 @@
 //new Ucenje.E16Polimorfizam.Program();
 //new Ucenje.E17Vjezbanje.Program();
 //new Ucenje.E18GSALE.Program();
-new Ucenje.E19KonzolnaAplikacija.Izbornik();
+//new Ucenje.E19KonzolnaAplikacija.Izbornik();
+new Ucenje.ZavrsniRad.Izbornik();
 
 //E01UlazIzlaz.Izvedi();
 //E02Varijable.Izvedi();

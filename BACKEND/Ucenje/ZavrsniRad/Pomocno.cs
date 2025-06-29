@@ -8,7 +8,7 @@ namespace Ucenje.ZavrsniRad
 {
     public class Pomocno
     {
-        //***********************************************************************************************************************
+        //************************************** UcitajString *********************************************************************
         /// <summary>
         /// Učitava i vraća string koji korisnik unese putem konzole.
         /// Ponovno traži unos dok korisnik ne unese ne-prazan string.
@@ -29,7 +29,7 @@ namespace Ucenje.ZavrsniRad
                 Console.WriteLine("Obavezan unos!");
             }
         }
-        //***********************************************************************************************************************
+        //**************************************** Ucitaj Cijeli Broj *************************************************************
         /// <summary>
         /// Učitava cijeli broj koji korisnik unese putem konzole.
         /// Ponovno traži unos dok korisnik ne unese ispravan cijeli broj.
@@ -51,6 +51,7 @@ namespace Ucenje.ZavrsniRad
                 }
             }
         }
+        //**************************************** Ucitaj Bool *************************************************************
         /// <summary>
         /// Učitava i vraća bool vrijednost na temelju korisničkog unosa.
         /// Korisniku se prikazuje poruka s opcijama '1 za DA' ili '2 za NE'.
@@ -92,7 +93,7 @@ namespace Ucenje.ZavrsniRad
                 }
             }
         }
-        //***********************************************************************************************************************
+        //********************************************** Ucitaj Raspon *****************************************************************
         /// <summary>
         /// Učitava cijeli broj unutar zadanog raspona koji korisnik unese putem konzole.
         /// Ponovno traži unos dok korisnik ne unese ispravan cijeli broj unutar zadanih granica.
@@ -122,5 +123,33 @@ namespace Ucenje.ZavrsniRad
                 }
             }
         }
+        //********************************************* Ucitaj Datum ******************************************************************
+        /// <summary>
+        /// Učitava i vraća datum koji korisnik unese putem konzole.
+        /// Korisniku se prikazuje poruka s formatom unosa "yyyy-MM-dd".
+        /// Ponovno traži unos dok korisnik ne unese ispravan datum u traženom formatu.
+        /// </summary>
+        /// <param name="poruka">Poruka koja se prikazuje korisniku prije unosa.</param>
+        /// <returns>Uneseni datum tipa DateTime.</returns>
+        public static DateTime UcitajDatum(string poruka)
+        {
+            DateTime datum;
+
+            while (true)
+            {
+                try
+                {
+                    Console.WriteLine("Format unosa je yyyy-MM-dd");
+                    Console.Write(poruka + ": ");
+                    datum = DateTime.Parse(Console.ReadLine());
+                    return datum;
+                }
+                catch
+                {
+                    Console.WriteLine("Nepravilan nos datuma");
+                }
+            }
+        }
+        //***************************************************************************************************************
     }
 }

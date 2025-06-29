@@ -48,11 +48,11 @@ namespace Ucenje.ZavrsniRad
                     UcitajIzbornik();
                     break;
                 case 4:
-                    //UrediPostojeciTurnir();
+                    UrediTurnir();
                     UcitajIzbornik();
                     break;
                 case 5:
-                    //ObrisiTurnir();
+                    ObrisiTurnir();
                     UcitajIzbornik();
                     break;
                 case 6:
@@ -96,20 +96,54 @@ namespace Ucenje.ZavrsniRad
             {
                 Sifra = Pomocno.UcitajRasponBroja("Unesi šifru turnira", 1, int.MaxValue),
                 Ime = Pomocno.UcitajString("Unesi naziv turnira"),
-                //DatumPocetka = Pomocno.UcitajDatum("Unesi datum početka turnira"),
-                //DatumZavrsetka = Pomocno.UcitajDatum("Unesi datum završetka turnira"),
+                DatumPocetka = Pomocno.UcitajDatum("Unesi datum početka turnira"),
+                DatumZavrsetka = Pomocno.UcitajDatum("Unesi datum završetka turnira"),
             });
             Console.WriteLine("*************************");
         }
 
-        // napravit metodu Ucitaj Datum u Pomocno
-        // napravit metode uredi i obrisi turnir
+        public void UrediTurnir()
+        {
+            PregledSvihTurnira();
+            var odabrani = Turniri[Pomocno.UcitajRasponBroja("Odaberi redni broj turnira",
+                1, Turniri.Count) - 1];
 
+            if (Pomocno.UcitajRasponBroja("1. Mjenjaš sve\n2. Pojedinačna promjena", 1, 2) == 1)
+            {
+                odabrani.Sifra = Pomocno.UcitajRasponBroja("Unesi šifru smjera", 1, int.MaxValue);
+                odabrani.Ime = Pomocno.UcitajString("Unesi naziv turnira");
+                odabrani.DatumPocetka = Pomocno.UcitajDatum("Unesi novi datum početka turnira");
+                odabrani.DatumZavrsetka = Pomocno.UcitajDatum("Unesi novi datum završetka turnira");
+            }
+            else
+            {
+                switch (Pomocno.UcitajRasponBroja("1. Šifra\n2. Ime\n3. Datum početka\n4. Datum završetka\n", 1, 4))
+                {
+                    case 1:
+                        odabrani.Sifra = Pomocno.UcitajRasponBroja("Unesi šifru smjera", 1, int.MaxValue);
+                        break;
+                    case 2:
+                        odabrani.Ime = Pomocno.UcitajString("Unesi naziv smjera");
+                        break;
+                    case 3:
+                        odabrani.DatumPocetka = Pomocno.UcitajDatum("Unesi novi datum početka turnira");
+                        break;
+                    case 4:
+                        odabrani.DatumPocetka = Pomocno.UcitajDatum("Unesi novi datum završetka turnira");
+                        break;
+                }
+            }
+        }
+        private void ObrisiTurnir()
+        {
+            PregledSvihTurnira();
+            var odabrani = Turniri[Pomocno.UcitajRasponBroja("Odaberi redni broj turnira za obrisati",
+                1, Turniri.Count) - 1];
 
-
-
-
-
-
+            if (Pomocno.UcitajBool("Sigurno obrisati " + odabrani.Ime +"?"))
+            {
+                Turniri.Remove(odabrani);
+            }
+        }
     }
 }
