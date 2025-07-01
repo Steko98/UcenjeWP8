@@ -18,9 +18,7 @@ namespace Ucenje.ZavrsniRad
         public Izbornik()
         {
             Console.WriteLine("***********************************");
-            Console.WriteLine("***********************************");
             Console.WriteLine("********** Catan App v1. **********");
-            Console.WriteLine("***********************************");
             Console.WriteLine("***********************************");
 
             UcitajIzbornik();
@@ -28,10 +26,8 @@ namespace Ucenje.ZavrsniRad
 
         private void UcitajIzbornik()
         {
-            Console.WriteLine("*************************");
-            Console.WriteLine("**** Glavni izbornik ****");
-            Console.WriteLine("*************************");
-            Console.WriteLine("1. Rad s igrama");
+            Console.WriteLine("\n**** Glavni izbornik ****");
+            Console.WriteLine("\n1. Rad s igrama"); //ujedno i rad s clanovima, povezano
             Console.WriteLine("2. Pregled po igracima");
             Console.WriteLine("3. Pregled po turnirima");
             Console.WriteLine("4. Rekordi");
@@ -40,11 +36,11 @@ namespace Ucenje.ZavrsniRad
         }
         private void OdabirIzbornika()
         {
-            switch (Pomocno.UcitajRasponBroja("Odaberite stavku izbornika", 1, 5))
+            switch (Pomocno.UcitajRasponBroja("\nOdaberite stavku izbornika", 1, 5))
             {
                 case 1:
                     Console.Clear();
-                    //ObradaIgra.UcitajIzbornik();
+                    ObradaIgra.UcitajIzbornik();
                     UcitajIzbornik();
                     break;
                 case 2:
@@ -63,7 +59,7 @@ namespace Ucenje.ZavrsniRad
                     UcitajIzbornik();
                     break;
                 case 5:
-                    Console.WriteLine("Hvala na korištenju aplikacije, doviđenja!");
+                    Console.WriteLine("Hvala, doviđenja!");
                     //SpremiPodatke();
                     break;
             }

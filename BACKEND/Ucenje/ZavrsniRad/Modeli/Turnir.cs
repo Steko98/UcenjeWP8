@@ -11,5 +11,6 @@ namespace Ucenje.E14KlasaObjekt.Modeli
         public string? Ime { get; set; }
         public DateTime DatumPocetka { get; set; }
         public DateTime? DatumZavrsetka { get; set; }
+        public List<Igra> Igre { get; set; }
     }
 }

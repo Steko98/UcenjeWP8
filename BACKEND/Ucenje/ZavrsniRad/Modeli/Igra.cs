@@ -9,6 +9,5 @@ namespace Ucenje.E14KlasaObjekt.Modeli
     public class Igra : Entitet
     {
         public DateTime Datum { get; set; }
-        public Turnir Turnir { get; set; } = new Turnir();
     }
 }

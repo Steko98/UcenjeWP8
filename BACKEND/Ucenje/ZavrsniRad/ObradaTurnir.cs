@@ -19,11 +19,9 @@ namespace Ucenje.ZavrsniRad
 
         public void UcitajIzbornik()
         {
-            Console.WriteLine("*************************");
             Console.WriteLine("**** Rad s turnirima ****");
-            Console.WriteLine("*************************");
-            Console.WriteLine("1. Pregled svih turnira");
-            Console.WriteLine("2. Pregleda pojedinog turnira");
+            Console.WriteLine("\n1. Pregled svih turnira");
+            Console.WriteLine("2. Pregled pojedinog turnira");
             Console.WriteLine("3. Dodaj turnir");
             Console.WriteLine("4. Uredi postojeći turnir");
             Console.WriteLine("5. Brisanje turnira");
@@ -33,7 +31,7 @@ namespace Ucenje.ZavrsniRad
 
         private void OdabirIzbornika()
         {
-            switch (Pomocno.UcitajRasponBroja("Odaberite stavku izbornika", 1, 6))
+            switch (Pomocno.UcitajRasponBroja("\nOdaberite stavku izbornika", 1, 6))
             {
                 case 1:
                     PregledSvihTurnira();
